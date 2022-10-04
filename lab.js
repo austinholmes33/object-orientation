@@ -311,8 +311,8 @@ let Phone = class {
     this.color = color;
     this.price = price;
     this.sold = false;
-  } changePrice () {
-    newPrice
+  } changePrice (newPrice) {
+    this.price = newPrice
   }
 }
   
@@ -341,7 +341,8 @@ let cell3 = new Phone('iphone', '12', 40, 'red', 800)
 
 //Code Here 
 
-
+cell1.changePrice(1100)
+console.log(cell1)
 
 /*
   Now call the sell method on one of your other phone objects
