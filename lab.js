@@ -179,9 +179,6 @@ console.log(greeting(greet))
 
 //Code Here
 
-function ingredients(obj) {
-    return console.log(ingredArr)
-}
 
 let ingredients1 = {
   carb:'carb',
@@ -189,12 +186,14 @@ let ingredients1 = {
   protein: 'protein',
 }
 
-let {carb} = ingredients1
-let {fat} = ingredients1
-let {protein} = ingredients1
+function ingredients(obj) {
+  let {carb, fat, protein} = ingredients1
+  let ingredArr = []
+  ingredArr.push(carb, fat, protein)
+  return ingredArr
+}
 
-let ingredArr = [carb, fat, protein]
-ingredients(ingredients1)
+console.log(ingredients(ingredients1))
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -222,9 +221,9 @@ let {email} = user
 
 name = 'Bryan G. Smith'
 email = 'bryan.smith@devmounta.in'
-console.log(name)
-console.log(email)
-console.log(user)
+//console.log(name)
+//console.log(email)
+//console.log(user)
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -233,6 +232,8 @@ console.log(user)
 
 //Code Here
 
+delete user.age
+//console.log(user)
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -243,6 +244,16 @@ console.log(user)
 
 //Code here
 
+let Cat = class {
+  constructor(name, age, color) {
+  this.name = name;
+  this.age = age;
+  this.color = color;
+  }
+}
+
+let cat1 = new Cat ('bo', 3, 'blue')
+//console.log(cat1.name)
 
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
@@ -254,6 +265,18 @@ console.log(user)
 */
 
 //Code here
+
+let Wizard = class {
+  constructor(name, age, favoriteSpell) {
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  } castSpell() {
+      return console.log(`${name} has cast ${favoriteSpell}`)
+    }
+}
+
+let wiz1 = new Wizard('Merlin', 299, 'fireball')
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
@@ -280,6 +303,18 @@ console.log(user)
 
 //Code Here
 
+let Phone = class {
+  constructor(brand, model, storage, color, price, sold) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false;
+  } changePrice () {
+    newPrice
+  }
+}
   
 /*
     Next make three new phone instances using your class.
@@ -293,6 +328,10 @@ console.log(user)
 
 //Code Here
 
+let cell1 = new Phone('iphone', '14', 60, 'white', 1200)
+let cell2 = new Phone('android', 'a10e', 15, 'black', 300)
+let cell3 = new Phone('iphone', '12', 40, 'red', 800)
+
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -301,6 +340,7 @@ console.log(user)
 */ 
 
 //Code Here 
+
 
 
 /*
