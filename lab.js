@@ -145,7 +145,27 @@ console.log(greeting(greet))
 
 //Code Here
 
+// function totalPopulation (object) {
+//   let total = 0
+//   for (let values in states) {
+//     total += (states[values])
+//   }
+// } 
 
+// let states = {
+//   utah: 1,
+//   california: 2,
+//   texas: 3,
+//   arizona: 4,
+// }
+
+// let {utah} = states
+// let {california} = states
+// let {texas} = states
+// let {arizona} = states
+
+// const values = (utah + california + texas + arizona)
+// totalPopulation(states)
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
@@ -159,6 +179,22 @@ console.log(greeting(greet))
 
 //Code Here
 
+function ingredients(obj) {
+    return console.log(ingredArr)
+}
+
+let ingredients1 = {
+  carb:'carb',
+  fat: 'fat',
+  protein: 'protein',
+}
+
+let {carb} = ingredients1
+let {fat} = ingredients1
+let {protein} = ingredients1
+
+let ingredArr = [carb, fat, protein]
+ingredients(ingredients1)
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -181,6 +217,14 @@ var user = {
 
 //Code Here
 
+let {name} = user
+let {email} = user
+
+name = 'Bryan G. Smith'
+email = 'bryan.smith@devmounta.in'
+console.log(name)
+console.log(email)
+console.log(user)
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
