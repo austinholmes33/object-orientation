@@ -23,8 +23,8 @@ let me = {
 let dog = {
   name: 'carl',
   color: 'black',
-  age: 7
-  goodBoy: true
+  age: 7,
+  goodBoy: true,
 }
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
@@ -50,12 +50,12 @@ console.log(dog['color'])
 //Code here
 
 let favoriteThings = {
-  band: 'System of a Down'
-  food: 'Pizza'
-  person: 'My partner'
-  book: 'The Crossing'
-  movie: 'Kill Bill'
-  holiday: 'Halloween'
+  band: 'System of a Down',
+  food: 'Pizza',
+  person: 'My partner',
+  book: 'The Crossing',
+  movie: 'Kill Bill',
+  holiday: 'Halloween',
 }
 
 /*
@@ -65,6 +65,7 @@ let favoriteThings = {
 //Code here
 
 favoriteThings.season = 'Summer'
+console.log(favoriteThings)
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
@@ -73,6 +74,8 @@ favoriteThings.season = 'Summer'
 
 //Code here
 
+favoriteThings.food = 'Chicken Nuggets'
+// console.log(favoriteThings)
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -91,7 +94,12 @@ var carDetails = {
 
 //Code Here
 
+let {color} = carDetails
+let {make} = carDetails
+let {model} = carDetails
+let {year} = carDetails
 
+// console.log(color)
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -103,12 +111,26 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+
+  let {firstName} = greet
+  let {lastName} = greet
+  let {title} = greet
+  console.log(firstName)
+  console.log(lastName)
+  console.log(title)
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
 
+let greet = {
+    firstName:'Austin',
+    lastName: 'Holmes',
+    title: 'Dev',
+}
+greeting(greet)
+console.log(greeting(greet))
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
